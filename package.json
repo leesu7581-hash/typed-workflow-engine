@@ -1,0 +1,28 @@
+{
+  "name": "@leesu/typed-workflow-engine",
+  "version": "0.1.0",
+  "description": "A tiny, typed state-transition engine for predictable multi-step workflows.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "keywords": [
+    "typescript",
+    "state-machine",
+    "workflow",
+    "finite-state-machine"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
